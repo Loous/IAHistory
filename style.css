@@ -1,0 +1,217 @@
+@font-face{
+    font-family: "titulo";
+    src: url(/assets/fonts/archivoblack-webfont.woff2) format("woff2"),
+        url(/assets/fonts/archivoblack-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Basic styles*/
+
+body{
+    margin: 0 auto;
+    background-image: radial-gradient(circle at 0, rgb(255, 229, 157), rgb(255, 190, 10));
+    
+    
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 4rem;
+    font-family: "titulo";
+    font-size: 3rem;
+    
+}
+
+h2:not(.rl){
+    position: absolute;
+    top: 38%;
+    text-align: center;
+    font-size: 2.3rem;
+    width: 100%;
+    color: rgb(255,255,255);
+    text-shadow: 2px 2px 2px rgb(0,0,0);
+    text-decoration: underline overline 5px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+    outline: none;
+}
+
+header{
+    background-image: url(/assets/images/pexels-photo-2832432.jpg);
+    height: 20px;
+}
+
+.box{
+    position: relative;
+    border: 3px solid rgb(0,0,0);
+    border-radius: 3px;
+}
+
+.home{
+    position: absolute;
+    font-size: 4rem;
+    top: 60px;
+    left: 20px;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 50px;
+    width: 4.5rem;
+    height: 4rem;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgb(255,255,255);
+}
+
+.home:hover{
+    background-color: rgb(207, 205, 205);
+    transition: background-color .5s;
+
+    
+}
+
+.homeIcon{
+    width: 40px;
+    height: 40px;
+}
+
+/*Grid style*/
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    height: 37rem;
+    margin: 0 20px 0 20px;
+    background-image: linear-gradient(0deg, rgb(106, 103, 206), rgb(148, 126, 195), 
+    rgb(182, 137, 192), rgb(238, 243, 210));
+    animation: rainbow 30s infinite cubic-bezier(.43,.45,.58,.58);
+}
+
+/*Images style*/
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer styles*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    column-gap: 50px;
+
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+
+}
+
+/*Media style*/
+
+@media screen and (max-width: 412px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    footer{
+        position: fixed;
+        flex-flow: column wrap;
+        row-gap: 10px;
+        top: 150px;
+        left: 5px;
+        
+    }
+
+    footer img{
+        width: 30px;
+        height: 30px;
+    }
+    .wrapper{
+        background-image: none;
+    }
+    
+}
+
+/*Animation style*/
+
+@keyframes rainbow{
+    from{
+        background-position-y: 0;
+        
+    }
+    to{
+        background-position-y: 200rem;
+    }
+
+}
+
+/*Historia styles*/
+
+.wp{
+    padding: 0 70px 0 70px;
+    margin-bottom: 10rem;
+}
+
+.ct{
+    width: 350px;
+    height: 300px;
+}
+
+/*Avances style*/
+
+.imgWrapper{
+    position: relative;
+    width: 450px;
+    height: 300px;
+    float: right;
+
+}
+
+.blrl{
+    position: absolute;
+    opacity: 0;
+    
+    
+}
+
+.imPs{
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s;
+    
+}
+
+/*Futuro style*/
+
+.imFt{
+    width: 450px;
+    height: 300px;
+    
+    
+}
+
+.ftBox img:nth-child(2){
+    margin-left: 30px;
+}
+
+.ftBox{
+    padding-left: 5rem;
+    
+}
+
+
+
+
+
+
